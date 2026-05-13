@@ -7,6 +7,7 @@ The rules provided here are designed to detect specific behaviors, packers, and 
 
 ## Rules Inventory
 * **RedLine_Koi.yar**: Detects the reflective loading mechanism (Koi module) of RedLine Stealer variants packed with ConfuserEx. Created after manually unpacking the stage-2 payload from memory.
+* ![YARA Successful Execution](yara_test.png)
 
 ## About the Author
 **Svetoslav Angelov**
