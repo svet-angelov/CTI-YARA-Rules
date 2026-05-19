@@ -7,7 +7,10 @@ The rules provided here are designed to detect specific behaviors, packers, and 
 
 ## Rules Inventory
 * **RedLine_Koi.yar**: Detects the reflective loading mechanism (Koi module) of RedLine Stealer variants packed with ConfuserEx. Created after manually unpacking the stage-2 payload from memory.
-* ![YARA Successful Execution](yara_test.png)
+* ![YARA Successful Execution](RedLine_Yara_Test.png)
+
+* **Amadey_Botnet_Memory.yar**: Detects the Amadey botnet payload using a combination of static network/dropper API imports, a hardcoded Campaign ID, and dynamically extracted Command and Control (C2) indicators. Engineered after bypassing a custom modular arithmetic cypher and extracting the decrypted C2 domains directly from CPU registers via x64dbg.
+* ![YARA Successful Execution](Amadey_Yara_Test.png)
 
 ## About the Author
 **Svetoslav Angelov**
