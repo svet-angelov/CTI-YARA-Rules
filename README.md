@@ -12,6 +12,9 @@ The rules provided here are designed to detect specific behaviors, packers, and 
 * **Amadey_Botnet_Memory.yar**: Detects the Amadey botnet payload using a combination of static network/dropper API imports, a hardcoded Campaign ID, and dynamically extracted Command and Control (C2) indicators. Engineered after bypassing a custom modular arithmetic cypher and extracting the decrypted C2 domains directly from CPU registers via x64dbg.
 * ![YARA Successful Execution](Amadey_Yara_Test.png)
 
+* **AsyncRAT_Dropper_MSTeams.yar**: Detects an AsyncRAT dropper variant utilising a flawed MSTeamsSetup execution chain and UAC bypass. Engineered after dynamic host telemetry analysis revealed the compilation mismatch, and network analysis exposed its TLS certificate pinning sequence.
+* ![YARA Successful Execution](AsyncRAT_Yara_Test.png)
+
 ## About the Author
 **Svetoslav Angelov**
 Threat Intelligence Analyst | Reverse Engineering Enthusiast
