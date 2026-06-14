@@ -16,7 +16,7 @@ The rules provided here are designed to detect specific behaviors, packers, and 
 * ![YARA Successful Execution](AsyncRAT_Yara_Test.png)
 
 *  **Gamaredon.yar**: Detects Gamaredon APT (UAC-0010) maldocs utilising Remote Template Injection to bypass static macro scanning. Engineered after performing static analysis on an OpenXML document masquerading as a legacy binary. The rule bypasses DEFLATE compression evasion by targeting extracted `.docx` relationship files (e.g., `settings.xml.rels`) to identify hidden `.ru` C2 infrastructure and custom `.p3l` payload extensions.
-* ![YARA Successful Execution](Gamaredon_Yara_Test)
+* ![YARA Successful Execution](Gamaredon_Yara_Test.png)
    
 ## About the Author
 **Svetoslav Angelov**
