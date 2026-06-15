@@ -18,3 +18,4 @@ rule Gamaredon_Remote_Template_Injection_v2 {
         // Fire if we find the relationship properties AND the infrastructure clues
         $rel and ($domain or ($tld and $ext))
 }
+//Note: Requires the target file to be extracted/decompressed prior to scanning
