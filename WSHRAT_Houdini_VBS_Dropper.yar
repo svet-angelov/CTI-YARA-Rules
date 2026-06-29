@@ -3,7 +3,7 @@ rule WSHRAT_Houdini_VBS_Dropper {
         author = "CTI Analyst"
         description = "Detects VBScript variant of WSHRAT/Houdini utilizing PowerShell Process Hollowing and Registry storage."
         date = "2026-06-28"
-        hash = "207ac97e60aeb989a1feaaae8a..." 
+        hash = "207ac97e60aeb989a14feaae8a365f5b35233ac7800f1357b325a0bd8d3bdd5c" 
         threat_actor = "kognito"
 
     strings:
