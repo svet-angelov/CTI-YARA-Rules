@@ -17,6 +17,10 @@ The rules provided here are designed to detect specific behaviors, packers, and 
 
 *  **Gamaredon.yar**: Detects Gamaredon APT (UAC-0010) maldocs utilising Remote Template Injection to bypass static macro scanning. Engineered after performing static analysis on an OpenXML document masquerading as a legacy binary. The rule bypasses DEFLATE compression evasion by targeting extracted `.docx` relationship files (e.g., `settings.xml.rels`) to identify hidden `.ru` C2 infrastructure and custom `.p3l` payload extensions.
 * ![YARA Successful Execution](Gamaredon_Yara_Test.png)
+
+* **WSHRAT_Houdini_VBS_Dropper.yar**: Detects a VBScript variant of the WSHRAT (Houdini) malware. Engineered to catch the payload utilising a synchronous "is-ready" loop and "Living off the Land" tactics, specifically fileless PowerShell injection (Process Hollowing into `MSBuild.exe`) via Registry key staging (`HKCU\SOFTWARE\Microsoft\mPluginC`). The rule was written and validated using live dynamic memory analysis.
+* ![YARA Successful Execution](WSHRAT_VBS_Dropper_Yara_Test.png)
+
    
 ## About the Author
 **Svetoslav Angelov**
